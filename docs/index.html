@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Demo - OnscrollDetection.js</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+		<script type="module" src="./main.js"></script>
+	</head>
+	<body class="main">
+		<section id="hero" class="section -hero">
+			<div class="section_canvas">
+				<div class="hero">
+					<span id="myElement"
+						data-onscroll
+						data-onscroll-trigger=".section#hero"
+						data-onscroll-start="center center"
+						data-onscroll-to='{"opacity": 0, "margin": "0 0.25em", "scale": 0, "transformOrigin": "center"}'>O</span>
+					<span data-onscroll
+						data-onscroll-trigger=".section#hero"
+						data-onscroll-start="center center"
+						data-onscroll-to='{"opacity": 0, "margin": "0 0.25em", "scale": 0, "transformOrigin": "center"}'>n</span>
+					<span data-onscroll
+						data-onscroll-trigger=".section#hero"
+						data-onscroll-start="center center"
+						data-onscroll-to='{"opacity": 0, "margin": "0 0.25em", "scale": 0, "transformOrigin": "center"}'>s</span>
+					<span data-onscroll
+						data-onscroll-trigger=".section#hero"
+						data-onscroll-start="center center"
+						data-onscroll-to='{"opacity": 0, "margin": "0 0.25em", "scale": 0, "transformOrigin": "center"}'>c</span>
+					<span data-onscroll
+						data-onscroll-trigger=".section#hero"
+						data-onscroll-start="center center"
+						data-onscroll-to='{"opacity": 0, "margin": "0 0.25em", "scale": 0, "transformOrigin": "center"}'>r</span>
+					<span data-onscroll
+						data-onscroll-trigger=".section#hero"
+						data-onscroll-start="center center"
+						data-onscroll-to='{"opacity": 0, "margin": "0 0.25em", "scale": 0, "transformOrigin": "center"}'>o</span>
+					<span data-onscroll
+						data-onscroll-trigger=".section#hero"
+						data-onscroll-start="center center"
+						data-onscroll-to='{"opacity": 0, "margin": "0 0.25em", "scale": 0, "transformOrigin": "center"}'>l</span>
+					<span data-onscroll
+						data-onscroll-trigger=".section#hero"
+						data-onscroll-start="center center"
+						data-onscroll-to='{"opacity": 0, "margin": "0 0.25em", "scale": 0, "transformOrigin": "center"}'>l</span>
+				</div>
+			</div>
+		</section>
+		<section id="offsets" class="section -offsets">
+			<div class="section_label">
+				<div class="label_heading">Offsets</div>
+				<div class="label_description">
+					<p>Enter description here...</p>
+				</div>
+			</div>
+			<div class="section_canvas">
+				<div class="boxes">
+					<div class="box -progress"
+						data-onscroll
+						data-onscroll-progress="progressEvent"
+						data-onscroll-preset
+						data-onscroll-offset="-100%,0">-100%</div>
+					<div class="box"
+						data-onscroll
+						data-onscroll-preset
+						data-onscroll-offset="-200,0">-200</div>
+					<div class="box"
+						data-onscroll
+						data-onscroll-preset
+						data-onscroll-offset="-100,0">-100</div>
+					<div class="box"
+						data-onscroll
+						data-onscroll-preset
+						data-onscroll-offset="100,0">100</div>
+					<div class="box"
+						data-onscroll
+						data-onscroll-preset
+						data-onscroll-offset="200,0">200</div>
+					<div class="box"
+						data-onscroll
+						data-onscroll-preset
+						data-onscroll-offset="100%,0">200%</div>
+				</div>
+			</div>
+		</section>
+		<section id="distances" class="section -distances">
+			<div class="section_label">
+				<div class="label_heading">Distances</div>
+				<div class="label_description">
+					<p>Enter description here...</p>
+				</div>
+			</div>
+			<div class="section_canvas">
+				<div class="boxes">
+					<div class="box"
+						data-onscroll
+						data-onscroll-preset
+						data-onscroll-offset="0,-200">-200</div>
+					<div class="box"
+						data-onscroll
+						data-onscroll-preset
+						data-onscroll-offset="0,-200%">-200%</div>
+					<div class="box"
+						data-onscroll
+						data-onscroll-preset
+						data-onscroll-offset="0,-100">-100</div>
+					<div class="box"
+						data-onscroll
+						data-onscroll-preset
+						data-onscroll-offset="0,100">100</div>
+					<div class="box"
+						data-onscroll
+						data-onscroll-preset
+						data-onscroll-offset="0,200%">200%</div>
+					<div class="box"
+						data-onscroll
+						data-onscroll-preset
+						data-onscroll-offset="0,200">200</div>
+				</div>
+			</div>
+		</section>
+		<section id="offset-distance" class="section -offset-distances">
+			<div class="section_label">
+				<div class="label_heading">Offset + Distance</div>
+				<div class="label_description">
+					<p>Enter description here...</p>
+				</div>
+			</div>
+			<div class="section_canvas">
+				<div class="boxes">
+					<div class="box"
+						data-onscroll
+						data-onscroll-preset
+						data-onscroll-offset="100,-100">100 / -100</div>
+					<div class="box"
+						data-onscroll
+						data-onscroll-preset
+						data-onscroll-offset="71.43%,-71.43%">71.43% / -71.43%</div>
+					<div class="box"
+						data-onscroll
+						data-onscroll-preset
+						data-onscroll-offset="-100,71.43%">-71.43% / 71.43%</div>
+					<div class="box"
+						data-onscroll
+						data-onscroll-preset
+						data-onscroll-offset="-100,100">-100 / 100</div>
+				</div>
+			</div>
+		</section>
+		<section id="fixed" class="section -fixed">
+			<div class="section_label">
+				<div class="label_heading">Fixed/Sticky</div>
+				<div class="label_description">
+					<p>Enter description here...</p>
+				</div>
+			</div>
+			<div class="section_canvas">
+				<div class="sticky">
+					<aside class="sticky_side">
+						<div class="sticky_side_box -sticky"
+						data-onscroll
+						data-onscroll-debug
+						data-onscroll-sticky
+						data-onscroll-offset="50,100"
+						data-onscroll-trigger="#stickyTrigger">Sticky!</div>
+					</aside>
+					<aside id="stickyTrigger" class="sticky_side">
+						<div class="sticky_side_box">Placeholder</div>
+						<div class="sticky_side_box">Placeholder</div>
+						<div class="sticky_side_box">Placeholder</div>
+						<div class="sticky_side_box">Placeholder</div>
+						<div class="sticky_side_box">Placeholder</div>
+						<div class="sticky_side_box">Placeholder</div>
+						<div class="sticky_side_box">Placeholder</div>
+					</aside>
+				</div>
+			</div>
+		</section>
+		<section id="speeds" class="section -speeds">
+			<div class="section_label">
+				<div class="label_heading">Speeds</div>
+				<div class="label_description">
+					<p>Enter description here...</p>
+				</div>
+			</div>
+			<div class="section_canvas">
+				<div class="boxes">
+					<div class="box"
+						data-onscroll
+						data-onscroll-speed="0,10">10% viewport</div>
+					<div class="box"
+						data-onscroll
+						data-onscroll-speed="1,10">x1 + 10% viewport</div>
+					<div class="box"
+						data-onscroll
+						data-onscroll-speed="1,15">x1 + 15% viewport</div>
+						<div class="box"
+						data-onscroll
+						data-onscroll-speed="-.5,0">-x0.5</div>
+				</div>
+			</div>
+		</section>
+		<section id="delays" class="section -delays">
+			<div class="section_label">
+				<div class="label_heading">Delays (Lerps)</div>
+				<div class="label_description">
+					<p>Enter description here...</p>
+				</div>
+			</div>
+			<div class="section_canvas">
+				<div class="boxes">
+					<div class="box"
+						data-onscroll
+						data-onscroll-preset
+						data-onscroll-offset="150,-150"
+						data-onscroll-trigger=".section#delays"
+						data-onscroll-delay="0">0</div>
+					<div class="box"
+						data-onscroll
+						data-onscroll-preset
+						data-onscroll-offset="150,-150"
+						data-onscroll-delay="2">2</div>
+					<div class="box"
+						data-onscroll
+						data-onscroll-preset
+						data-onscroll-offset="150,-150"
+						data-onscroll-delay="4">4</div>
+					<div class="box"
+						data-onscroll
+						data-onscroll-preset
+						data-onscroll-offset="150,-150"
+						data-onscroll-delay="5">5</div>
+				</div>
+			</div>
+		</section>
+		<section id="directions" class="section -directions">
+			<div class="section_label">
+				<div class="label_heading">Directions</div>
+				<div class="label_description">
+					<p>Enter description here...</p>
+				</div>
+			</div>
+			<div class="section_canvas">
+				<div class="boxes">
+					<div class="boxes">
+						<div class="box"
+							data-onscroll
+							data-onscroll-offset="0,-150"
+							data-onscroll-direction="x">x</div>
+						<div class="box"
+							data-onscroll
+							data-onscroll-offset="0,150"
+							data-onscroll-direction="y">y</div>
+						<div class="box"
+							data-onscroll
+							data-onscroll-offset="0,150"
+							data-onscroll-direction="xy">xy</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="animations" class="section -animations">
+			<div class="section_label">
+				<div class="label_heading">Custom Animations</div>
+				<div class="label_description">
+					<p>Enter description here...</p>
+				</div>
+			</div>
+			<div class="section_canvas">
+				<div class="boxes">
+					<div class="box"
+						data-onscroll
+						data-onscroll-offset="150,-150"
+						data-onscroll-start="top-=50 bottom"
+						data-onscroll-end="bottom-=150 top"
+						data-onscroll-from='{"backgroundColor": "#fff", "rotation": "0", "scale": 0.5}'
+						data-onscroll-to='{"backgroundColor": "yellow", "rotation": "-360", "scale": 1}'>0</div>
+					<div class="box"
+						data-onscroll
+						data-onscroll-offset="-150,150"
+						data-onscroll-start="top-=150 bottom"
+						data-onscroll-end="bottom+=150 top"
+						data-onscroll-from='{"backgroundColor": "#fff", "rotation": "0", "scale": 0.5}'
+						data-onscroll-to='{"backgroundColor": "yellow", "rotation": "-360", "scale": 1}'>2</div>
+				</div>
+			</div>
+		</section>
+		<section id="startstop" class="section -startstop">
+			<div class="section_label">
+				<div class="label_heading">Custom Start/Stop</div>
+				<div class="label_description">
+					<p>Enter description here...</p>
+				</div>
+			</div>
+			<div class="section_canvas">
+				<div class="boxes">
+					<div class="box"
+						data-onscroll
+						data-onscroll-offset="0,150"
+						data-onscroll-start="center center"
+						data-onscroll-end="center top-=150">center center /<br/>center top-=150</div>
+				</div>
+			</div>
+		</section>
+		<section id="responsive" class="section -responsive">
+			<div class="section_label">
+				<div class="label_heading">Responsive</div>
+				<div class="label_description">
+					<p>Enter description here...</p>
+				</div>
+			</div>
+			<div class="section_canvas">
+				<div class="boxes">
+					<div class="box"
+						data-onscroll
+						data-onscroll-offset="150,-150"
+						data-onscroll-screen="(min-width: 960px)">Desktop</div>
+					<div class="box"
+						data-onscroll
+						data-onscroll-offset="150,-150"
+						data-onscroll-screen="(max-width: 960px)">Mobile</div>
+				</div>
+			</div>
+		</section>
+		<section id="auto" class="section -auto">
+			<div class="section_label">
+				<div class="label_heading">Auto</div>
+				<div class="label_description">
+					<p>Enter description here...</p>
+				</div>
+			</div>
+			<div class="section_canvas">
+				<div class="images">
+					<figure class="image">
+						<img class="image_src -normal" src="https://picsum.photos/700/700"
+							data-onscroll
+							data-onscroll-auto>
+					</figure>
+					<figure class="image">
+						<img class="image_src -reverse" src="https://picsum.photos/700/700"
+							data-onscroll
+							data-onscroll-auto
+							data-onscroll-reverse>
+					</figure>
+				</div>
+			</div>
+		</section>
+		<section id="debugging" class="section -debugging">
+			<div class="section_label">
+				<div class="label_heading">Debugging</div>
+				<div class="label_description">
+					<p>Enter description here...</p>
+				</div>
+			</div>
+			<div class="section_canvas">
+				<div class="boxes">
+					<div class="box"
+						data-onscroll
+						data-onscroll-call="scrollEventDemo"
+						data-onscroll-offset="0,150"
+						data-onscroll-from='{"backgroundColor": "#fff", "rotation": "0", "scale": 0.5}'
+						data-onscroll-to='{"backgroundColor": "yellow", "rotation": "-360", "scale": 1}'
+						data-onscroll-debug>Element</div>
+				</div>
+			</div>
+		</section>
+		<section id="methods" class="section -methods">
+			<div class="section_label">
+				<div class="label_heading">Methods</div>
+				<div class="label_description">
+					<p>Enter description here...</p>
+				</div>
+			</div>
+			<div class="section_canvas">
+				<div class="buttons">
+					<button class="js-button" data-method="refresh">Refresh</button>
+					<button class="js-button" data-method="stop">Stop</button>
+					<button class="js-button" data-method="restart">Restart</button>
+					<button class="js-button" data-method="update">Update</button>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
