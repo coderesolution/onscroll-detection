@@ -33,15 +33,15 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/coderesolution/onscroll-detection.js.git"
+		"url": "git+https://github.com/coderesolution/onscroll-detection.git"
 	},
 	"keywords": [],
 	"author": "@coderesolution",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/coderesolution/onscroll-detection.js/issues"
+		"url": "https://github.com/coderesolution/onscroll-detection/issues"
 	},
-	"homepage": "https://github.com/coderesolution/onscroll-detection.js#readme",
+	"homepage": "https://github.com/coderesolution/onscroll-detection#readme",
 	"devDependencies": {
 		"@size-limit/preset-small-lib": "^8.2.4",
 		"eslint": "^8.40.0",
