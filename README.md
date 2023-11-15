@@ -640,13 +640,6 @@ onscroll.on('restart', () => {
 })
 ```
 
-## Examples of use
-
--   [Code Resolution](https://coderesolution.com/): Digital agency partner.
--   [Enumera Molecular](#): Coming soon.
--   [Stairwell](#): Coming soon.
--   [US Foot & Ankle Specialists](#): Coming soon.
-
 ## License
 
 [The MIT License (MIT)](LICENSE)
