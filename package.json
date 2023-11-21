@@ -1,14 +1,8 @@
 {
 	"name": "onscroll-detection",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"description": "Onscroll Detection enables the creation of powerful GSAP animations using custom `data-onscroll-*` attributes in the DOM. It leverages GSAP and ScrollTrigger to easily create scroll-based parallax animations, custom transforms, progressive animations, and more.",
-	"keywords": [
-		"scroll",
-		"parallax",
-		"animations",
-		"detection",
-		"GSAP"
-	],
+	"keywords": [],
 	"files": [
 		"dist/**/*",
 		"bundled/**/*"
@@ -42,7 +36,6 @@
 		"type": "git",
 		"url": "git+https://github.com/coderesolution/onscroll-detection.git"
 	},
-	"keywords": [],
 	"author": "@coderesolution",
 	"license": "ISC",
 	"bugs": {
