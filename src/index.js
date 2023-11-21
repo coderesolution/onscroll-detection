@@ -222,15 +222,14 @@ export default class OnscrollDetection {
 				scrub: this.getScrub(element),
 				markers: this.hasAttributes(element, ['data-onscroll-debug']),
 				onUpdate: (self) => {
-					let progress = self.progress.toFixed(2)
-					element.style.setProperty('--onscrollProgress', progress)
-
 					if (progressEventName) {
+						let progress = self.progress.toFixed(2)
+						element.style.setProperty('--onscrollProgress', progress)
 						dispatchProgressEvent(progress, self.direction)
 					}
 				},
 				onToggle: (self) => {
-					if (!self.isActive) {
+					if (!self.isActive && progressEventName) {
 						element.style.setProperty('--onscrollProgress', 0)
 					}
 				},

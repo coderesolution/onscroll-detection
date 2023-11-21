@@ -1,11 +1,11 @@
 # Onscroll Detection
 
+Onscroll Detection enables the creation of powerful GSAP animations using custom `data-onscroll-*` attributes in the DOM. It leverages GSAP and ScrollTrigger to easily create scroll-based parallax animations, custom transforms, progressive animations, and more.
+
 <a href="https://www.npmjs.com/package/onscroll-detection"><img src="https://img.shields.io/npm/v/onscroll-detection?color=red" alt="NPM Version"></a>
 <a href="LICENCE"><img src="https://img.shields.io/github/license/coderesolution/onscroll-detection?color=orange" alt="Licence"></a>
 <img src="https://img.shields.io/bundlephobia/min/onscroll-detection?color=green" alt="Bundle file size">
 <img src="https://img.shields.io/bundlephobia/minzip/onscroll-detection?color=yellow&label=gzip%20size" alt="Bundle file size (gzip)">
-
-Onscroll Detection enables the creation of powerful GSAP animations using custom `data-onscroll-*` attributes in the DOM. It leverages GSAP and ScrollTrigger to easily create scroll-based parallax animations, custom transforms, progressive animations, and more.
 
 ## Features
 
@@ -375,7 +375,7 @@ _offset in the above example is for illustrative purposes_
 ### Start
 
 Attribute: `data-onscroll-start`
-Default: `'top bottom'` or `'top top'` if `data-onscroll-sticky` is set
+Default: `'top bottom'` or `'top top'` if (sticky)[#sticky] is set
 Type: `str`
 
 Adjust the point when the animation begins. See [preset](#preset) for automatic detection with offsets.
@@ -395,7 +395,7 @@ The first value refers to the trigger and the second value refers to the viewpor
 ### End
 
 Attribute: `data-onscroll-end`
-Default: `'bottom top'` unless `data-onscroll-sticky` is set
+Default: `'bottom top'` or `bottom bottom` if (sticky)[#sticky] is set
 Type: `str`
 
 Adjust the point when the animation ends. See [preset](#preset) for automatic detection with offsets.
