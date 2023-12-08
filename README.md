@@ -456,6 +456,11 @@ Must be valid JSON format, such as `{"backgroundColor": "#fff", "rotation": "0"}
 </div>
 ```
 
+In some situations having a mix of single and double quotes can be problematic, particularly when writing PHP. Use backslashes to prevent errors.
+```php
+echo '<div data-onscroll data-onscroll-from=\'{"scale": 1.25}\' data-onscroll-to=\'{"scale": 1}\' data-onscroll-screen="all"></div>';
+```
+
 ### Call
 
 Attribute: `data-onscroll-call`
