@@ -73,5 +73,8 @@
 			"limit": "2 kB",
 			"path": "dist/index.mjs"
 		}
-	]
+	],
+	"dependencies": {
+		"@studio-freight/lenis": "^1.0.34"
+	}
 }
