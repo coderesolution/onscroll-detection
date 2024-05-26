@@ -1,4 +1,4 @@
-# Onscroll Detection
+sorry# Onscroll Detection
 
 Onscroll Detection enables the creation of powerful GSAP animations using custom `data-onscroll-*` attributes in the DOM. It leverages GSAP and ScrollTrigger to easily create scroll-based parallax animations, custom transforms, progressive animations, and more.
 
@@ -17,7 +17,7 @@ Onscroll Detection enables the creation of powerful GSAP animations using custom
 -   Create custom animations such as rotation, skewing, colour changes, and more.
 -   Target specific screen sizes for adaptive animations.
 -   Built-in debugging mode.
--   Lightweight (~3.1Kb gzipped).
+-   Lightweight (~2.71 kB Brotli).
 
 ## Dependencies
 
