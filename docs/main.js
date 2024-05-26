@@ -1,6 +1,5 @@
 /* Lib */
 import OnscrollDetection from '../src/index'
-import Lenis from '@studio-freight/lenis'
 
 /* Demo CSS */
 import './index.css'
