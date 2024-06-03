@@ -2,6 +2,8 @@
 
 Onscroll Detection enables the creation of powerful GSAP animations using custom `data-onscroll-*` attributes in the DOM. It leverages GSAP and ScrollTrigger to easily create scroll-based parallax animations, custom transforms, progressive animations, and more.
 
+[Walk-through video](https://cloud.cdrs.dev/h6BvSP9P)
+
 <a href="https://www.npmjs.com/package/onscroll-detection"><img src="https://img.shields.io/npm/v/onscroll-detection?color=red" alt="NPM Version"></a>
 <a href="LICENCE"><img src="https://img.shields.io/github/license/coderesolution/onscroll-detection?color=orange" alt="Licence"></a>
 <img src="https://img.shields.io/bundlephobia/min/onscroll-detection?color=green" alt="Bundle file size">
