@@ -252,7 +252,7 @@ Attribute: `data-onscroll-preset`
 Default: `false`
 Type: Toggle (no value)
 
-Automatically adjust `start` and `end` values based on `offset` settings to eliminate the need for complex values like `data-onscroll-start="top bottom+=200"` (see [end](#start) and [end](#end) ).
+Automatically adjust `start` and `end` values based on `offset` settings to eliminate the need for complex values like `data-onscroll-start="top bottom+=200"` (see [start](#start) and [end](#end) ).
 
 Note: If the offset value exceeds `0`, the start will be where the original element was before offset is applied. This avoids a jump as it comes into view.
 
@@ -351,7 +351,7 @@ Set an alternative element as the trigger instead of itself. Specificity is cruc
 ```html
 <div data-onscroll data-onscroll-trigger="#elementById"><!-- Vertical --></div>
 <div data-onscroll data-onscroll-trigger=".element-by-class"><!-- Horizontal --></div>
-<div data-onscroll data-onscroll-trigger="body"><!-- Selector (not recommended) --></div>
+<div data-onscroll data-onscroll-trigger="body"><!-- Selector --></div>
 ```
 
 ### Sticky
@@ -379,7 +379,7 @@ _offset in the above example is for illustrative purposes_
 ### Start
 
 Attribute: `data-onscroll-start`
-Default: `'top bottom'` or `'top top'` if (sticky)[#sticky] is set
+Default: `'top bottom'` or `'top top'` if [sticky](#sticky) is set
 Type: `str`
 
 Adjust the point when the animation begins. See [preset](#preset) for automatic detection with offsets.
@@ -399,7 +399,7 @@ The first value refers to the trigger and the second value refers to the viewpor
 ### End
 
 Attribute: `data-onscroll-end`
-Default: `'bottom top'` or `bottom bottom` if (sticky)[#sticky] is set
+Default: `'bottom top'` or `bottom bottom` if [sticky](#sticky) is set
 Type: `str`
 
 Adjust the point when the animation ends. See [preset](#preset) for automatic detection with offsets.
