@@ -182,7 +182,7 @@ Apply any of the following data attributes in conjunction with `[data-onscroll]`
 -   [start](#start)
 -   [end](#end)
 -   [screen](#screen)
--   [from / to](#from2Fto)
+-   [from / to](#fromto)
 -   [call](#call)
 -   [progress](#progress)
 
@@ -419,14 +419,14 @@ The first value refers to the trigger and the second value refers to the viewpor
 ### Screen
 
 Attribute: `data-onscroll-screen`
-Default: `'(min-width: 1025px)'` (configurable globally via options[#options])
+Default: `'(min-width: 1025px)'` (configurable globally via [options](#options))
 Type: `str`
 
 Set screen size conditions for the animation. For example: animate on desktop and not mobile, or vice-versa. Expects media queries like `(min-width: 500px)` or `(min-width: 768px) and (max-width: 1000px)` etc. Set to `all` to animate on all screen sizes.
 
 ###### Set globally
 
-Setting per instance takes precedence over global settings via options[#options] which sets the default.
+Setting per instance takes precedence over global settings via [options](#options) which sets the default.
 
 ```html
 <div data-onscroll data-onscroll-offset="0,100" data-onscroll-screen="(min-width: 500px)">
@@ -549,7 +549,7 @@ onscroll.fetch(trigger)
 
 ### Update
 
-Adjust the to and from (see [from / to](#from2Fto)) properties applied to an element.
+Adjust the to and from (see [from / to](#fromto)) properties applied to an element.
 
 ```js
 const element = document.querySelector('#myElement')
