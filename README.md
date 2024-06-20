@@ -349,9 +349,15 @@ Type: `string` (DOM element by selectors, i.e. `#id`, `.class`)
 Set an alternative element as the trigger instead of itself. Specificity is crucial to ensure only a single element is assigned.
 
 ```html
-<div data-onscroll data-onscroll-trigger="#elementById"><!-- Vertical --></div>
-<div data-onscroll data-onscroll-trigger=".element-by-class"><!-- Horizontal --></div>
-<div data-onscroll data-onscroll-trigger="body"><!-- Selector --></div>
+<div data-onscroll data-onscroll-target="#elementById"></div>
+<div data-onscroll data-onscroll-target=".element-by-class"></div>
+<div data-onscroll data-onscroll-target="body"></div>
+<div data-onscroll data-onscroll-target="ul li:last-child"></div>
+```
+
+When using the Code Resolution boilerplate for WordPress, you can set the component as the target like so:
+```php
+echo "<div data-onscroll data-onscroll-target='#$id'></div>";
 ```
 
 ### Sticky
@@ -464,6 +470,14 @@ In some situations having a mix of single and double quotes can be problematic, 
 ```php
 echo '<div data-onscroll data-onscroll-from=\'{"scale": 1.25}\' data-onscroll-to=\'{"scale": 1}\' data-onscroll-screen="all"></div>';
 ```
+
+Or another approach:
+```php
+// Create the transformation JSON strings and escape them
+$onscroll_from = htmlspecialchars('{"opacity": 1}', ENT_QUOTES);
+$onscroll_to = htmlspecialchars('{"opacity": 0.1}', ENT_QUOTES);
+
+echo "<div data-onscroll data-onscroll-from='$onscroll_from' data-onscroll-to='$onscroll_to'></div>";
 
 ### Call
 
