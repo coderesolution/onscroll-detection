@@ -665,3 +665,5 @@ export default class OnscrollDetection {
 		this.triggers = null
 	}
 }
+
+window.OnscrollDetection = OnscrollDetection;

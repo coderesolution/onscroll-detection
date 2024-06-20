@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -6,47 +6,76 @@
 		<title>Demo - OnscrollDetection.js</title>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+		<!-- <script src="https://cdn.jsdelivr.net/npm/onscroll-detection@1.0.10/bundled/index.min.js"></script> -->
+
+		<!-- <script src="./index.min.js"></script>
+		<script src="./main.js"></script> -->
+
 		<script type="module" src="./main.js"></script>
-		<script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>
+
+		<link rel="stylesheet" href="./index.css" />
 	</head>
 	<body class="main">
 		<section id="hero" class="section -hero">
 			<div class="section_canvas">
 				<div class="hero">
-					<span id="myElement"
+					<span
+						id="myElement"
 						data-onscroll
 						data-onscroll-trigger=".section#hero"
 						data-onscroll-start="center center"
-						data-onscroll-to='{"opacity": 0, "margin": "0 0.25em", "scale": 0, "transformOrigin": "center"}'>O</span>
-					<span data-onscroll
+						data-onscroll-to='{"opacity": 0, "margin": "0 0.25em", "scale": 0, "transformOrigin": "center"}'
+						>O</span
+					>
+					<span
+						data-onscroll
 						data-onscroll-trigger=".section#hero"
 						data-onscroll-start="center center"
-						data-onscroll-to='{"opacity": 0, "margin": "0 0.25em", "scale": 0, "transformOrigin": "center"}'>n</span>
-					<span data-onscroll
+						data-onscroll-to='{"opacity": 0, "margin": "0 0.25em", "scale": 0, "transformOrigin": "center"}'
+						>n</span
+					>
+					<span
+						data-onscroll
 						data-onscroll-trigger=".section#hero"
 						data-onscroll-start="center center"
-						data-onscroll-to='{"opacity": 0, "margin": "0 0.25em", "scale": 0, "transformOrigin": "center"}'>s</span>
-					<span data-onscroll
+						data-onscroll-to='{"opacity": 0, "margin": "0 0.25em", "scale": 0, "transformOrigin": "center"}'
+						>s</span
+					>
+					<span
+						data-onscroll
 						data-onscroll-trigger=".section#hero"
 						data-onscroll-start="center center"
-						data-onscroll-to='{"opacity": 0, "margin": "0 0.25em", "scale": 0, "transformOrigin": "center"}'>c</span>
-					<span data-onscroll
+						data-onscroll-to='{"opacity": 0, "margin": "0 0.25em", "scale": 0, "transformOrigin": "center"}'
+						>c</span
+					>
+					<span
+						data-onscroll
 						data-onscroll-trigger=".section#hero"
 						data-onscroll-start="center center"
-						data-onscroll-to='{"opacity": 0, "margin": "0 0.25em", "scale": 0, "transformOrigin": "center"}'>r</span>
-					<span data-onscroll
+						data-onscroll-to='{"opacity": 0, "margin": "0 0.25em", "scale": 0, "transformOrigin": "center"}'
+						>r</span
+					>
+					<span
+						data-onscroll
 						data-onscroll-trigger=".section#hero"
 						data-onscroll-start="center center"
-						data-onscroll-to='{"opacity": 0, "margin": "0 0.25em", "scale": 0, "transformOrigin": "center"}'>o</span>
-					<span data-onscroll
+						data-onscroll-to='{"opacity": 0, "margin": "0 0.25em", "scale": 0, "transformOrigin": "center"}'
+						>o</span
+					>
+					<span
+						data-onscroll
 						data-onscroll-trigger=".section#hero"
 						data-onscroll-start="center center"
-						data-onscroll-to='{"opacity": 0, "margin": "0 0.25em", "scale": 0, "transformOrigin": "center"}'>l</span>
-					<span data-onscroll
+						data-onscroll-to='{"opacity": 0, "margin": "0 0.25em", "scale": 0, "transformOrigin": "center"}'
+						>l</span
+					>
+					<span
+						data-onscroll
 						data-onscroll-trigger=".section#hero"
 						data-onscroll-start="center center"
-						data-onscroll-to='{"opacity": 0, "margin": "0 0.25em", "scale": 0, "transformOrigin": "center"}'>l</span>
+						data-onscroll-to='{"opacity": 0, "margin": "0 0.25em", "scale": 0, "transformOrigin": "center"}'
+						>l</span
+					>
 				</div>
 			</div>
 		</section>
@@ -59,31 +88,20 @@
 			</div>
 			<div class="section_canvas">
 				<div class="boxes">
-					<div class="box -progress"
+					<div
+						class="box -progress"
 						data-onscroll
 						data-onscroll-progress="progressEvent"
 						data-onscroll-preset
-						data-onscroll-offset="-100%,0">-100%</div>
-					<div class="box"
-						data-onscroll
-						data-onscroll-preset
-						data-onscroll-offset="-200,0">-200</div>
-					<div class="box"
-						data-onscroll
-						data-onscroll-preset
-						data-onscroll-offset="-100,0">-100</div>
-					<div class="box"
-						data-onscroll
-						data-onscroll-preset
-						data-onscroll-offset="100,0">100</div>
-					<div class="box"
-						data-onscroll
-						data-onscroll-preset
-						data-onscroll-offset="200,0">200</div>
-					<div class="box"
-						data-onscroll
-						data-onscroll-preset
-						data-onscroll-offset="100%,0">200%</div>
+						data-onscroll-offset="-100%,0"
+					>
+						-100%
+					</div>
+					<div class="box" data-onscroll data-onscroll-preset data-onscroll-offset="-200,0">-200</div>
+					<div class="box" data-onscroll data-onscroll-preset data-onscroll-offset="-100,0">-100</div>
+					<div class="box" data-onscroll data-onscroll-preset data-onscroll-offset="100,0">100</div>
+					<div class="box" data-onscroll data-onscroll-preset data-onscroll-offset="200,0">200</div>
+					<div class="box" data-onscroll data-onscroll-preset data-onscroll-offset="100%,0">200%</div>
 				</div>
 			</div>
 		</section>
@@ -96,30 +114,12 @@
 			</div>
 			<div class="section_canvas">
 				<div class="boxes">
-					<div class="box"
-						data-onscroll
-						data-onscroll-preset
-						data-onscroll-offset="0,-200">-200</div>
-					<div class="box"
-						data-onscroll
-						data-onscroll-preset
-						data-onscroll-offset="0,-200%">-200%</div>
-					<div class="box"
-						data-onscroll
-						data-onscroll-preset
-						data-onscroll-offset="0,-100">-100</div>
-					<div class="box"
-						data-onscroll
-						data-onscroll-preset
-						data-onscroll-offset="0,100">100</div>
-					<div class="box"
-						data-onscroll
-						data-onscroll-preset
-						data-onscroll-offset="0,200%">200%</div>
-					<div class="box"
-						data-onscroll
-						data-onscroll-preset
-						data-onscroll-offset="0,200">200</div>
+					<div class="box" data-onscroll data-onscroll-preset data-onscroll-offset="0,-200">-200</div>
+					<div class="box" data-onscroll data-onscroll-preset data-onscroll-offset="0,-200%">-200%</div>
+					<div class="box" data-onscroll data-onscroll-preset data-onscroll-offset="0,-100">-100</div>
+					<div class="box" data-onscroll data-onscroll-preset data-onscroll-offset="0,100">100</div>
+					<div class="box" data-onscroll data-onscroll-preset data-onscroll-offset="0,200%">200%</div>
+					<div class="box" data-onscroll data-onscroll-preset data-onscroll-offset="0,200">200</div>
 				</div>
 			</div>
 		</section>
@@ -132,22 +132,14 @@
 			</div>
 			<div class="section_canvas">
 				<div class="boxes">
-					<div class="box"
-						data-onscroll
-						data-onscroll-preset
-						data-onscroll-offset="100,-100">100 / -100</div>
-					<div class="box"
-						data-onscroll
-						data-onscroll-preset
-						data-onscroll-offset="71.43%,-71.43%">71.43% / -71.43%</div>
-					<div class="box"
-						data-onscroll
-						data-onscroll-preset
-						data-onscroll-offset="-100,71.43%">-71.43% / 71.43%</div>
-					<div class="box"
-						data-onscroll
-						data-onscroll-preset
-						data-onscroll-offset="-100,100">-100 / 100</div>
+					<div class="box" data-onscroll data-onscroll-preset data-onscroll-offset="100,-100">100 / -100</div>
+					<div class="box" data-onscroll data-onscroll-preset data-onscroll-offset="71.43%,-71.43%">
+						71.43% / -71.43%
+					</div>
+					<div class="box" data-onscroll data-onscroll-preset data-onscroll-offset="-100,71.43%">
+						-71.43% / 71.43%
+					</div>
+					<div class="box" data-onscroll data-onscroll-preset data-onscroll-offset="-100,100">-100 / 100</div>
 				</div>
 			</div>
 		</section>
@@ -161,12 +153,16 @@
 			<div class="section_canvas">
 				<div class="sticky">
 					<aside class="sticky_side">
-						<div class="sticky_side_box -sticky"
-						data-onscroll
-						data-onscroll-debug
-						data-onscroll-sticky
-						data-onscroll-offset="50,100"
-						data-onscroll-trigger="#stickyTrigger">Sticky!</div>
+						<div
+							class="sticky_side_box -sticky"
+							data-onscroll
+							data-onscroll-debug
+							data-onscroll-sticky
+							data-onscroll-offset="50,100"
+							data-onscroll-trigger="#stickyTrigger"
+						>
+							Sticky!
+						</div>
 					</aside>
 					<aside id="stickyTrigger" class="sticky_side">
 						<div class="sticky_side_box">Placeholder</div>
@@ -189,18 +185,10 @@
 			</div>
 			<div class="section_canvas">
 				<div class="boxes">
-					<div class="box"
-						data-onscroll
-						data-onscroll-speed="0,10">10% viewport</div>
-					<div class="box"
-						data-onscroll
-						data-onscroll-speed="1,10">x1 + 10% viewport</div>
-					<div class="box"
-						data-onscroll
-						data-onscroll-speed="1,15">x1 + 15% viewport</div>
-						<div class="box"
-						data-onscroll
-						data-onscroll-speed="-.5,0">-x0.5</div>
+					<div class="box" data-onscroll data-onscroll-speed="0,10">10% viewport</div>
+					<div class="box" data-onscroll data-onscroll-speed="1,10">x1 + 10% viewport</div>
+					<div class="box" data-onscroll data-onscroll-speed="1,15">x1 + 15% viewport</div>
+					<div class="box" data-onscroll data-onscroll-speed="-.5,0">-x0.5</div>
 				</div>
 			</div>
 		</section>
@@ -213,26 +201,42 @@
 			</div>
 			<div class="section_canvas">
 				<div class="boxes">
-					<div class="box"
+					<div
+						class="box"
 						data-onscroll
 						data-onscroll-preset
 						data-onscroll-offset="150,-150"
-						data-onscroll-delay="0">0</div>
-					<div class="box"
+						data-onscroll-delay="0"
+					>
+						0
+					</div>
+					<div
+						class="box"
 						data-onscroll
 						data-onscroll-preset
 						data-onscroll-offset="150,-150"
-						data-onscroll-delay="2">2</div>
-					<div class="box"
+						data-onscroll-delay="2"
+					>
+						2
+					</div>
+					<div
+						class="box"
 						data-onscroll
 						data-onscroll-preset
 						data-onscroll-offset="150,-150"
-						data-onscroll-delay="4">4</div>
-					<div class="box"
+						data-onscroll-delay="4"
+					>
+						4
+					</div>
+					<div
+						class="box"
 						data-onscroll
 						data-onscroll-preset
 						data-onscroll-offset="150,-150"
-						data-onscroll-delay="5">5</div>
+						data-onscroll-delay="5"
+					>
+						5
+					</div>
 				</div>
 			</div>
 		</section>
@@ -246,18 +250,11 @@
 			<div class="section_canvas">
 				<div class="boxes">
 					<div class="boxes">
-						<div class="box"
-							data-onscroll
-							data-onscroll-offset="0,-150"
-							data-onscroll-direction="x">x</div>
-						<div class="box"
-							data-onscroll
-							data-onscroll-offset="0,150"
-							data-onscroll-direction="y">y</div>
-						<div class="box"
-							data-onscroll
-							data-onscroll-offset="0,150"
-							data-onscroll-direction="xy">xy</div>
+						<div class="box" data-onscroll data-onscroll-offset="0,-150" data-onscroll-direction="x">x</div>
+						<div class="box" data-onscroll data-onscroll-offset="0,150" data-onscroll-direction="y">y</div>
+						<div class="box" data-onscroll data-onscroll-offset="0,150" data-onscroll-direction="xy">
+							xy
+						</div>
 					</div>
 				</div>
 			</div>
@@ -271,20 +268,28 @@
 			</div>
 			<div class="section_canvas">
 				<div class="boxes">
-					<div class="box"
+					<div
+						class="box"
 						data-onscroll
 						data-onscroll-offset="150,-150"
 						data-onscroll-start="top-=50 bottom"
 						data-onscroll-end="bottom-=150 top"
 						data-onscroll-from='{"backgroundColor": "#fff", "rotation": "0", "scale": 0.5}'
-						data-onscroll-to='{"backgroundColor": "yellow", "rotation": "-360", "scale": 1}'>0</div>
-					<div class="box"
+						data-onscroll-to='{"backgroundColor": "yellow", "rotation": "-360", "scale": 1}'
+					>
+						0
+					</div>
+					<div
+						class="box"
 						data-onscroll
 						data-onscroll-offset="-150,150"
 						data-onscroll-start="top-=150 bottom"
 						data-onscroll-end="bottom+=150 top"
 						data-onscroll-from='{"backgroundColor": "#fff", "rotation": "0", "scale": 0.5}'
-						data-onscroll-to='{"backgroundColor": "yellow", "rotation": "-360", "scale": 1}'>2</div>
+						data-onscroll-to='{"backgroundColor": "yellow", "rotation": "-360", "scale": 1}'
+					>
+						2
+					</div>
 				</div>
 			</div>
 		</section>
@@ -297,11 +302,15 @@
 			</div>
 			<div class="section_canvas">
 				<div class="boxes">
-					<div class="box"
+					<div
+						class="box"
 						data-onscroll
 						data-onscroll-offset="0,150"
 						data-onscroll-start="center center"
-						data-onscroll-end="center top-=150">center center /<br/>center top-=150</div>
+						data-onscroll-end="center top-=150"
+					>
+						center center /<br />center top-=150
+					</div>
 				</div>
 			</div>
 		</section>
@@ -314,14 +323,22 @@
 			</div>
 			<div class="section_canvas">
 				<div class="boxes">
-					<div class="box"
+					<div
+						class="box"
 						data-onscroll
 						data-onscroll-offset="150,-150"
-						data-onscroll-screen="(min-width: 960px)">Desktop</div>
-					<div class="box"
+						data-onscroll-screen="(min-width: 960px)"
+					>
+						Desktop
+					</div>
+					<div
+						class="box"
 						data-onscroll
 						data-onscroll-offset="150,-150"
-						data-onscroll-screen="(max-width: 960px)">Mobile</div>
+						data-onscroll-screen="(max-width: 960px)"
+					>
+						Mobile
+					</div>
 				</div>
 			</div>
 		</section>
@@ -335,15 +352,21 @@
 			<div class="section_canvas">
 				<div class="images">
 					<figure class="image">
-						<img class="image_src -normal" src="https://picsum.photos/700/700"
-							data-onscroll
-							data-onscroll-auto>
-					</figure>
-					<figure class="image">
-						<img class="image_src -reverse" src="https://picsum.photos/700/700"
+						<img
+							class="image_src -normal"
+							src="https://picsum.photos/700/700"
 							data-onscroll
 							data-onscroll-auto
-							data-onscroll-reverse>
+						/>
+					</figure>
+					<figure class="image">
+						<img
+							class="image_src -reverse"
+							src="https://picsum.photos/700/700"
+							data-onscroll
+							data-onscroll-auto
+							data-onscroll-reverse
+						/>
 					</figure>
 				</div>
 			</div>
@@ -357,13 +380,17 @@
 			</div>
 			<div class="section_canvas">
 				<div class="boxes">
-					<div class="box"
+					<div
+						class="box"
 						data-onscroll
 						data-onscroll-call="scrollEventDemo"
 						data-onscroll-offset="0,150"
 						data-onscroll-from='{"backgroundColor": "#fff", "rotation": "0", "scale": 0.5}'
 						data-onscroll-to='{"backgroundColor": "yellow", "rotation": "-360", "scale": 1}'
-						data-onscroll-debug>Element</div>
+						data-onscroll-debug
+					>
+						Element
+					</div>
 				</div>
 			</div>
 		</section>
