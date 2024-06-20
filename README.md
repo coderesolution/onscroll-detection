@@ -663,6 +663,17 @@ onscroll.on('restart', () => {
 })
 ```
 
+## Examples of use
+
+-   [Code Resolution](https://coderesolution.com)
+-   [Bay Harbor Towers](https://bayharbortowers.com)
+-   [PAL Aerospace](https://palaerospace.com/)
+-   [Enumera Molecular](https://enumeramolecular.com)
+-   [ONE38](https://liveone38.com/)
+-   [Stairwell](https://stairwell.com)
+-   [Divino](https://divinoharrogate.co.uk)
+-   [US Foot & Ankle Specialists](https://us-fas.com)
+
 ## License
 
 [The MIT License (MIT)](LICENSE)
