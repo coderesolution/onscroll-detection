@@ -478,6 +478,7 @@ $onscroll_from = htmlspecialchars('{"opacity": 1}', ENT_QUOTES);
 $onscroll_to = htmlspecialchars('{"opacity": 0.1}', ENT_QUOTES);
 
 echo "<div data-onscroll data-onscroll-from='$onscroll_from' data-onscroll-to='$onscroll_to'></div>";
+```
 
 ### Call
 
