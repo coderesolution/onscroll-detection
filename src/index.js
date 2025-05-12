@@ -15,6 +15,7 @@ export default class OnscrollDetection {
 		this.triggers = new Map()
 		this.debug = options.debug || false
 		this.end = options.end || 'bottom top'
+		this.start = options.start || 'top bottom'
 
 		// Set class names to defaults or provided options
 		this.scrollingClass = options.scrollingClass || 'is-scrolling'
@@ -433,7 +434,7 @@ export default class OnscrollDetection {
 
 			return positionElement + ' ' + positionMarker
 		} else {
-			return element.dataset.onscrollStart ? element.dataset.onscrollStart : 'top bottom'
+			return element.dataset.onscrollStart ? element.dataset.onscrollStart : this.start
 		}
 	}
 
