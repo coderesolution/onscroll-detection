@@ -159,6 +159,8 @@ All options:
 | `elements`       | `str`  |    `[data-onscroll]`    | What elements to apply onscroll animations to.                                                                                       |
 | `autoStart`      | `bool` |         `true`          | Whether to start immedietely. Set to `false` for a delayed start (recommended).                                                      |
 | `screen`         | `str`  | `'(min-width: 1025px)'` | Specify media query rules for animations. This can be overwritten on a per animation-basis. Set to `all` to remove queries entirely. |
+| `start`         | `str`  |    `'top bottom'`     | Global default start position for all animations. Can be overridden per element using `data-onscroll-start`.                        |
+| `end`           | `str`  |    `'bottom top'`     | Global default end position for all animations. Can be overridden per element using `data-onscroll-end`.                            |
 | `scrollingClass` | `str`  |    `'is-scrolling'`     | The class that is temporarily assigned to elements when they are within the viewport.                                                |
 | `scrolledClass`  | `str`  |    `'has-scrolled'`     | The class that is permanently assigned to element when they have been within viewport.                                               |
 | `stickyClass`    | `str`  |     `'has-sticky'`      | The class that is temporarily assigned to sticky element set by `[data-onscroll-sticky]` when they are within the viewport.          |
