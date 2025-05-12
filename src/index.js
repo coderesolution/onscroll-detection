@@ -14,6 +14,7 @@ export default class OnscrollDetection {
 		this.screen = options.screen || '(min-width: 1025px)'
 		this.triggers = new Map()
 		this.debug = options.debug || false
+		this.end = options.end || 'bottom top'
 
 		// Set class names to defaults or provided options
 		this.scrollingClass = options.scrollingClass || 'is-scrolling'
@@ -465,7 +466,7 @@ export default class OnscrollDetection {
 
 			return positionElement + ' ' + positionMarker
 		} else {
-			return element.dataset.onscrollEnd ? element.dataset.onscrollEnd : 'bottom top'
+			return element.dataset.onscrollEnd ? element.dataset.onscrollEnd : this.end
 		}
 	}
 

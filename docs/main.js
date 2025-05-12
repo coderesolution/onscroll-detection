@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			scrolledClass: 'custom-scrolled',
 			stickyClass: 'custom-sticky',
 			stuckClass: 'custom-stuck',
+			// end: 'center center',
 		},
 		gsap,
 		ScrollTrigger,
